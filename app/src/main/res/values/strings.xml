@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Sorted List Sample</string>
+
+    <string name="add">ADD</string>
+    <string name="remove">REMOVE</string>
+
+    <string name="select_add">Select Data to Add</string>
+    <string name="select_remove">Select Data to Remove</string>
+    <string name="ok">OK</string>
+    <string name="cancel">CANCEL</string>
+</resources>

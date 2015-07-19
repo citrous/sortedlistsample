@@ -85,6 +85,7 @@ public class MainFragment extends Fragment implements SelectDataDialogFragment.O
     }
 
     private void initDataList() {
+        ((SampleAdapter) recyclerView.getAdapter()).clearData();
         ArrayList<SampleData> initialDataList = new ArrayList<>();
         initialDataList.add(new SampleData(1, "1"));
         initialDataList.add(new SampleData(2, "2"));

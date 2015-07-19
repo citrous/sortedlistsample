@@ -41,11 +41,7 @@ public class SampleAdapter extends RecyclerView.Adapter<SampleAdapter.SampleView
     }
 
     public void addDataOf(List<SampleData> dataList) {
-        sortedList.beginBatchedUpdates();
-        for (SampleData data : dataList) {
-            sortedList.add(data);
-        }
-        sortedList.endBatchedUpdates();
+        sortedList.addAll(dataList);
     }
 
     public void removeDataOf(List<SampleData> dataList) {
@@ -57,9 +53,7 @@ public class SampleAdapter extends RecyclerView.Adapter<SampleAdapter.SampleView
     }
 
     public void clearData() {
-        sortedList.beginBatchedUpdates();
         sortedList.clear();
-        sortedList.endBatchedUpdates();
     }
 
     public SortedList<SampleData> getList() {
